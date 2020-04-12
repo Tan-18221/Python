@@ -1,0 +1,24 @@
+"""
+if语句
+格式：
+if 要判断的条件：
+    条件成立时，要做的事情
+elif 条件2：
+elif 条件3：
+else:
+    条件不成立时，要做的事情
+if else 是一个代码块
+
+if嵌套语法
+
+"""
+t = True
+l = 30
+if t:
+    print("通过")
+    if l>20:
+        print("ke")
+    if l<40:
+        print("buke")
+else:
+    print("买票")
