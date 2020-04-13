@@ -1,0 +1,61 @@
+"""
+while循环
+while 条件（判断 计数器 是否达到 目标次数）：
+    条件满足时，做1
+    条件满足时，做2
+    处理条件（计数器+1）
+死循环：处理条件没有写
+break和continue
+break 第一条件满足时 退出循环 不执行后面重复代码
+continue 某一条件满足时 还在循环里面 不执行后续重复代码
+循环嵌套
+while 条件1：
+    做1
+    2
+    while 条件2：
+        做1
+        2
+        处理条件
+"""
+"""
+i = 0
+r=0
+while i<=10:
+    if i==3:
+        #在循环中 使用continue这个关键字
+        #在使用关键字之前，需要确认循环的计数修改，否则会导致死循环
+        i = i+1
+        continue
+    print(i)
+    i=i+1
+"""
+#打印小星星
+
+r=1
+while r<=5:
+    print("*"*r)
+    r=r+1
+    
+r = 1
+while r<=5:
+    c=1
+    while c<=r:
+        print("*",end="")
+        c=c+1
+    print("")#一行输出之后再换行
+    r=r+1
+    
+#打印乘法表
+r=1 行
+while r<=9:
+    c=1列
+    while c<=r:
+        #print("*",end="")
+        print("%d*%d=%d" %(c,r,c*r), end="\t")
+        c=c+1
+    print("")
+    r =r+1
+
+    
+    
+   
