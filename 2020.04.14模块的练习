@@ -1,0 +1,23 @@
+"""
+模块使用
+模块相当于一个工具包
+倒入import
+调用模块方法
+模块名.变量
+模块名.函数
+"""
+import l
+
+l.l("-",50)
+print(l.n)
+
+
+def l(char,t):
+    print(char*t)
+def pl(char,t):
+    r=0
+    while r<5:
+        l(char,t)
+        r+=1
+pl("-",20)
+n="kkk"
