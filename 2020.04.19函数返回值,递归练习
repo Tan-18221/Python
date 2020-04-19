@@ -24,3 +24,15 @@ a,b=(b,a)
 print(a,b)
 
 
+"""
+递归
+一个函数内部自己调用自己
+"""
+def sm(num):
+    if num==1:
+        return 1
+    t=sm(num-1)
+    return num+t
+r=sm(9)
+print(r)
+
