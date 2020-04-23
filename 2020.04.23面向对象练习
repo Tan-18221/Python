@@ -1,0 +1,22 @@
+"""
+面向对象
+定义简单的类
+class 类名:
+    def 方法名（self，参数列表）:
+创建对象
+对象变量名 = 类名
+还可以创建多个猫对象
+给对象增加属性
+对象变量名.属性名=属性内容
+"""
+class cat():
+    def eat(self):
+        print("%s 吃"%self.name)
+        #哪一个对象调用的方法，self就是哪一个对象的引用
+    def di(self):
+        print("heshui")
+
+
+tom=cat()
+tom.name="jjjj"
+tom.eat()
