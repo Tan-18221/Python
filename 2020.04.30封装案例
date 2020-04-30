@@ -1,0 +1,23 @@
+"""
+面向对象封装案例
+1。将属性和方法封装到一个抽象的类中
+2。外界使用类创建对象，然后让对象调用方法
+3。对象方法的细节都被封装在类的内部
+"""
+class p:
+    def __init__(self,n,w):
+        self.na=n
+        self.we=w
+    def __str__(self):
+        return "我的名字叫%s 体重是%.2f 公斤" % (self.na,self.we)
+    def run(self):
+        print("%s爱跑步，跑步锻炼身体"% self.na)
+        self.we-=0.5
+
+    def eat(self):
+        print("%s是吃货，吃完这顿再减肥"% self.na)
+        self.we+=1
+xm = p("xiaoming",75)
+xm.run()
+xm.eat()
+print(xm)
