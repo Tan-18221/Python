@@ -94,6 +94,30 @@ wan.l()
 
 
 
+"""
+多态
+不同的子类对象调用相同的父类方法
+
+"""
+class d(object):
+    def __init__(self,name):
+        self.name=name
+    def game(self):
+        print("%s88"%self.name)
+class xt(d):
+    def game(self):
+        print("%sfeitian"%self.name)
+
+class p(object):
+    def __init__(self,name):
+        self.name=name
+    def gd(self,dog):
+        print("%s %s"%(self.name,dog.name))
+        dog.game
+
+wc=d("wangcai")
+xm=p("xiao")
+xm.gd(wc)
 
 
 
