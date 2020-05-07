@@ -20,3 +20,26 @@ class cat():
 tom=cat()
 tom.name="jjjj"
 tom.eat()
+
+
+"""
+私有属性，方法
+属性，方法前加__
+对象内部可以访问
+
+外部访问私有属性方法
+_类名__名称
+
+
+"""
+class women:
+    def __init__(self,name):
+        self.name="mi"
+        self.__age=18
+
+    def se(self):
+        print("%s年龄是%d"% (self.name,self.__age))
+xf=women("xiaofang")
+print(xf._women__age)
+
+xf.se()
