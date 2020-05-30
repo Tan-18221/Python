@@ -1,0 +1,63 @@
+"""
+继承语法
+class 类名（父名）
+方法重写
+子类直接修改
+
+如果子类中方法实现包含父类方法实现
+在需要的位置 使用super().父类方法
+
+私有属性 方法 子类也不能访问
+
+通过父类间接访问
+通过父类共有方法 访问私有属性或方法
+
+多继承
+子类会继承自己多个父类属性和方法
+class 子类名（父类名1，父类名2...）
+"""
+class An():
+    def __eat(self):
+        print("吃")
+    def test(self):
+        print("共有 ")
+        self.__eat()
+
+class Dog(An):
+    def sleep(self):
+        print("睡")
+
+class C(Dog):
+    def p(self):
+        print("跑")
+
+    def sleep(self):
+        print("睡得好")
+        super().sleep()
+        print("8888888")
+        self.test()
+
+
+class A:
+    def test(self):
+        print("test方法")
+
+
+class B:
+    def demo(self):
+        print("demo方法")
+
+
+class D(A, B):
+
+    pass
+
+
+d = D()
+d.test()
+d.demo()
+
+xt = C()
+
+xt.sleep()
+xt.test()
