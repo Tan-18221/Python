@@ -1,0 +1,37 @@
+"""
+多态
+不同的子类对象调用相同的父类方法，产生不同的执行结果
+"""
+
+
+class Dog(object):
+    def __init__(self,name):
+        self.name = name
+
+    def game(self):
+        print("%s jump" % self)
+
+
+class Xt(Dog):
+    def game(self):
+        print("%s fly jump" % self.name)
+
+
+class P(object):
+    def __init__(self,name):
+        self.name = name
+
+    def gwd(self,dog):
+        print("%s 和 %s 玩" % (self.name, dog.name))
+
+        dog.game()
+
+# wc = Dog("wan")
+wc = Xt("feitian")
+
+
+xm = P("xia")
+
+xm.gwd(wc)
+
+
